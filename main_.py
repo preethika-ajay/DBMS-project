@@ -86,7 +86,7 @@ def openinsert():
     def add_data():
         flag_validation=True # set the flag 
         my_user = t9.get("1.0",END)
-        my_name=t1.get("1.0") # read name
+        my_name=t1.get("1.0", END) # read name
         my_DOB=t2.get("1.0",END)    # read class
         my_DOB = my_DOB.split('-')
         year, month, day = [int(item) for item in my_DOB]
@@ -276,7 +276,7 @@ def openupdate():
     l5 = tk.Label(my_w,  textvariable=my_str, width=10 )  
     l5.grid(row=3,column=3) 
     def update_data():
-        my_id = t9.get("1.0")
+        my_id = t9.get("1.0", END)
         my_name=t1.get("1.0", END) # read name
         my_DOB=t2.get("1.0",END)    # read class
         my_DOB = my_DOB.split('-')
